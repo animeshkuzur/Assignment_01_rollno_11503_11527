@@ -1,6 +1,7 @@
 char* read_file(char name[256]){
 	FILE *file;
 	char *buffer;
+	char ch;
 	int fsize;
 	file = fopen(name,"r");
 	if (!file){
@@ -17,14 +18,8 @@ char* read_file(char name[256]){
 	   printf("Program terminated.");
 	   return 1;
 	}
-	/*size_t newbuffer = fread(buffer, sizeof(char), fsize, file);
-	/*buffer[++newbuffer] = '\0';
-	/*int i=0; char c;
-	while(c!=EOF){
-		c=fgetc(file);
-		buffer[i]=c;
-		i++;
-	}*/
+	size_t newbuffer = fread(buffer, sizeof(char), fsize, file);
+	buffer[++newbuffer] = '\0';
 	fclose(file);
     return buffer;
 }
