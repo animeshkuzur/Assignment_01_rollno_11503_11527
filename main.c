@@ -2,7 +2,7 @@
 #include"freader.h"
 #include"parser.h"
 int main(){
-	char name[256];
+	char name[256],word[256];
 	char *text;
 	int c=0;
 	printf("NLP Assignment 1\n\n");
@@ -14,8 +14,11 @@ int main(){
 	int words = count_words(text);
 	int para = count_para(text);
 	int chara = count_chara(text);
-	printf("%d\n",para);
-	printf("%d\n",words);
-	printf("%d\n",chara);
+	printf("\nParagraphs in the document: %d\n",para);
+	printf("Words in the document: %d\n",words);
+	printf("Characters in the document: %d\n",chara);
+	printf("\n\nSearch: ");
+	scanf("%s",word);
+	
     return 0;
 }

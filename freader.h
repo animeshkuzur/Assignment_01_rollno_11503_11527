@@ -5,7 +5,7 @@ char* read_file(char name[256]){
 	int fsize;
 	file = fopen(name,"r");
 	if (!file){
-		printf("\nFile found!\n");
+		printf("\nFile not found!\n");
 		printf("Program terminated.");
 		return 1;
 	}
