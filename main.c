@@ -1,7 +1,13 @@
 #include<stdio.h>
 #include"freader.h"
 #include"parser.h"
+#include"kmp.h"
+void start();
 int main(){
+	start();
+    return 0;
+}
+void start(){
 	char name[256],word[256];
 	char *text;
 	int c=0;
@@ -17,8 +23,6 @@ int main(){
 	printf("\nParagraphs in the document: %d\n",para);
 	printf("Words in the document: %d\n",words);
 	printf("Characters in the document: %d\n",chara);
-	printf("\n\nSearch: ");
-	scanf("%s",word);
+	search_str(text);
 	
-    return 0;
 }
