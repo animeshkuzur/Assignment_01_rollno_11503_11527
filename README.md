@@ -5,5 +5,5 @@ This program consist of three header files:
 * `parser.h` It contains functions to count the number of paragraphs, words and characters in the text file.
 * `kmp.h` This header file contains the kmp algorithm which help search through data.
 
-####Prerequisite
+#### Prerequisite
 * GCC Compiler
